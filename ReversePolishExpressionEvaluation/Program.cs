@@ -28,7 +28,7 @@ namespace ReversePolishExpressionEvaluation
                     int valArrayCurrentLength = valArray.Count;
                     switch (expressionArray[i])
                     {
-                        case "+": //Permorning the operation on the top 2 elements of the list (imagine as a stack)
+                        case "+": //Performing the operation on the top 2 elements of the list (imagine as a stack)
                             exp =  (valArray[valArray.Count - 2] + valArray[valArray.Count - 1]);
                             valArray.RemoveAt(valArrayCurrentLength - 1);
                             valArray.RemoveAt(valArrayCurrentLength - 2);
